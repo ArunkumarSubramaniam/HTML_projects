@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>Dragable Example</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+</head>
+<script>
+    $(function(){
+        $('#mydragdiv').draggable();
+    });
+</script>
+
+<body>
+    <div id="mydragdiv" style="width: 200px;height: 100px;padding: 1em;">
+        <span class="move" style="width: 50px;padding: 1em;"></span>
+        <img src="images/nose1.jpeg" height="70%" width="30%">
+        
+    </div>
+    <div id="mydragdiv" style="width: 200px;height: 100px;padding: 1em;">
+        <!-- <span class="move" style="width: 50px;padding: 1em;"></span> -->
+        <img src="images/eyes.png" height="70%" width="30%">
+        
+    </div>
+    <div id="mydragdiv" style="width: 200px;height: 100px;padding: 1em;">
+        <!-- <span class="move" style="width: 50px;padding: 1em;"></span> -->
+        <img src="images/mou.png" height="70%" width="30%">
+    </div>
+    <div>
+        <img src="images/oval.jpg">
+    </div>
+</body>
+
+</html>

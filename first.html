@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> This is a demo program</title>
+</head>
+<style>
+    #content{
+        border-style: dotted;
+        border-color: tomato;
+
+    }
+
+    #content1{
+        border-style: solid;
+        border-left-color: red;
+        border-right-color: red;
+    }
+
+    img {
+        border-left: solid;
+        border-left-color: tomato;
+    }
+
+    article {
+
+        border-style: dashed;
+        border-bottom-color: mediumseagreen;
+        border-top-color: orange;
+        border-right-color: orangered;
+        border-left-color: yellow;
+        border-bottom-style: dotted;
+        border-width: 3px;
+        line-height: 150%;
+    }
+
+    aside {
+        color: crimson;
+
+        text-decoration: underline overline;
+        text-decoration-color: chartreuse;
+    }
+
+    pre {
+        text-shadow: 2cm crimson;
+    }
+
+    p {
+        font-style: italic;
+        font: weight 8px;
+        text-decoration: underline wavy;
+        text-decoration-color: rgb(196, 8, 253);
+    }
+
+    a[href]:hover {
+        font-weight: bolder;
+    }
+</style>
+
+<body>
+    <h1> A tags</h1>
+    <h2 id="content"> CSS properties</h2>
+    <a href="https://abc.com">Hower me</a>
+    <p> This is the first paragraph</p>
+    <p id="content1">to use as an example</p>
+    <a href="images/google.png" download="download/google.png"><img src="images/google.png" alt="background"></a>
+    <br>
+    <abbr title="Structured query language">SQL</abbr>
+    <br>
+    <address>
+        <pre>
+    NO.00,
+    abc, def, ghi-000000
+    </pre>
+    </address>
+    <br>
+    <article>
+        This is an example article
+    </article>
+    <br>
+
+    <img src="images/india.jpg" width=200 height=300 usemap="#clickmap">
+    <map name="clickmap">
+        <area shape="circle" coords="85,250,20" href="https://en.wikipedia.org/wiki/Tamil_Nadu" target="_blank">
+    </map>
+    <br>
+    <table id="content1">
+        <tr>
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+        </tr>
+    </table>
+    <br>
+    <aside>
+        This is an aside
+    </aside>
+    <p id="content">This paragraph is to show the css properties</p>
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>My BootStrap Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+</head>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<style>
+    card-image {
+        height: 500px;
+        width: 400px;
+    }
+</style>
+
+<body style="background-image: url(images/peticon.jpg);height: auto;width: 100%;border-color: yellow;background-color: yellow;">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <a class="navbar-brand" href="#">Pet Shop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                style="background-image: url(images/peticon.jpg);">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="bootmenuex.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://en.wikipedia.org/wiki/Pet_store">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Category
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item"
+                                href="https://www.google.com/search?q=pets+images&rlz=1C1JZAP_enIN973IN973&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjbm66yp530AhXFX30KHbOLBtsQ_AUoAXoECAEQAw">Pets</a>
+                            <a class="dropdown-item" href="https://www.petshopindia.com/" target="_blank">Pet Foods</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://www.amazon.in/s?k=pet+house&ref=nb_sb_noss_1">Pet
+                                house,cages</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-dismiss="container">Close</a>
+                        <!-- <a class="nav-link" >Exit</a> -->
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <!-- <button class="btn btn-outline-lg my-2 my-sm-0" type="submit">Search</button> -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                        data-target="#exampleModalCenter">search</button>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenter">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Search Pet varieties</h5>
+                                    <button type="button" class="close" data-dismiss="modal" area-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Pet</th>
+                                                <th>Category</th>
+                                            </tr>
+                                        </thead>
+                                        <tr>
+                                            <td>Dog</td>
+                                            <td>Pug</td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Dog</td>
+                                            <td>Bull Dog</td>
+                                        </tr>
+                                        <tr>
+                                            </tbody>
+                                    </table>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img" src="images/dog.jpg" height="120%" alt="">
+                    <div class="card-img-overlay-grey text-white d-flex justify-content-center align-items-end"></div>
+                    <a href="https://www.google.com/search?q=puppies&rlz=1C1JZAP_enIN973IN973&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjdgsiyr5z0AhX2zzgGHbKbBkkQ_AUoAXoECAIQAw&biw=1280&bih=609&dpr=1.5"
+                        target="_blank">Puppies</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img" src="images/cat.jpg" alt="">
+                    <div class="card-img-overlay-grey text-white d-flex justify-content-center align-items-end"></div>
+                    <a href="https://www.google.com/search?q=cats&tbm=isch&ved=2ahUKEwj_6_Ler5z0AhVL_zgGHTpXDe4Q2-cCegQIABAA&oq=cats&gs_lcp=CgNpbWcQAzIHCAAQsQMQQzIECAAQQzIECAAQQzIHCAAQsQMQQzIECAAQQzIHCAAQsQMQQzIECAAQQzIECAAQQzIICAAQgAQQsQMyBQgAEIAEUJwHWK8TYIAYaABwAHgAgAFpiAHDA5IBAzQuMZgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=fl-TYf-0Ecv-4-EPuq618A4&bih=609&biw=1280&rlz=1C1JZAP_enIN973IN973"
+                        target="_blank">Cats</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img" src="images/birds.jpg" alt="">
+                    <div class="card-img-overlay-grey text-white d-flex justify-content-center align-items-end"></div>
+                    <a href="https://www.google.com/search?q=birds&tbm=isch&ved=2ahUKEwi5l7P8r5z0AhUqx6ACHa6nAPkQ2-cCegQIABAA&oq=birds&gs_lcp=CgNpbWcQAzIHCAAQsQMQQzILCAAQgAQQsQMQgwEyCAgAEIAEELEDMgQIABBDMgcIABCxAxBDMggIABCABBCxAzILCAAQgAQQsQMQgwEyCAgAEIAEELEDMgcIABCxAxBDMgUIABCABDoICAAQsQMQgwFQyQhYlBVg1xloAHAAeACAAWmIAbQEkgEDNC4ymAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=vF-TYbnJCaqOg8UPrs-CyA8&bih=609&biw=1280&rlz=1C1JZAP_enIN973IN973"
+                        target="_blank">Birds</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseexample"
+                        style="font-weight: bold; color: rgb(0, 0, 0);padding-left: 2cm;background-color: rgb(255, 255, 255) ;">Click for Menu:</a>
+
+                </h4>
+            </div>
+            <div id="collapseexample" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <table class="table">
+                        <caption style="text-align: center; font-size: x-large; color: rgb(99, 63, 26);">List Of Pets
+                            and Pet products</caption>
+                        <thead>
+                            <tr>
+                                <th>Pet </th>
+                                <th>Food</th>
+                                <th>House</th>
+                                <th>Accessories</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dog </td>
+                                <td>Pedigree and gravy</td>
+                                <td>for puppies</td>
+                                <td>collor,chain,food bowl</td>
+                            </tr>
+                            <tr>
+                                <td>Cat</td>
+                                <td>snack,gravy</td>
+                                <td>cage</td>
+                                <td>collor,bell,food bowl</td>
+                            </tr>
+                            <tr>
+                                <td>Birds</td>
+                                <td>seeds</td>
+                                <td>Cage</td>
+                                <td>pot,bowl</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            $('#collapseexample').on('show.bs.collapse', function () {
+            })
+        });
+    </script>
+    </div>
+    <div class="section-inner">
+        
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" style="align-items: center;">
+                <h3 style="text-align: center;font-weight: bold">Available@Store:</h3>
+
+              <div class="carousel-item active">
+                <div class="card w-25 m-auto">
+                <div class="card" style="background-color: black;width: 100%;align-items: center;">
+                    <h3 style="color: blanchedalmond;">Pets</h3>
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: rgba(214, 202, 202, 0.781);">All breads of Dogs and Cats</h5>
+                      <p class="card-image">
+                        <img src="images/dog_cat.jpg" height="175cm" width="280cm">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card w-25 m-auto">
+                <div class="card" style="background-color: black;width: 100%;align-items: center;">
+                    <h3 style="color: blanchedalmond;">Birds</h3>
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: rgba(214, 202, 202, 0.781);">Love birds and Parrots</h5>
+                      <p class="card-image">
+                        <img src="images/birds.jpg" height="175cm" width="280cm">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card w-25 m-auto">
+                <div class="card" style="background-color: black;width: 100%;align-items: center;">
+                    <h3 style="color: blanchedalmond;">Pet Food</h3>
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: rgba(214, 202, 202, 0.781);">Food items for every Age</h5>
+                      <p class="card-image">
+                        <img src="images/pet_foods.jpg" height="175cm" width="280cm">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card w-25 m-auto">
+                <div class="card" style="background-color: black;width: 100%;align-items: center;">
+                    <h3 style="color: blanchedalmond;">Bird cage</h3>
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: rgba(214, 202, 202, 0.781);">Cages in all sizes</h5>
+                      <p class="card-image">
+                        <img src="images/cage.jpg" height="175cm" width="280cm">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="card w-25 m-auto">
+                <div class="card" style="background-color: black;width: 100%;align-items: center;">
+                    <h3 style="color: blanchedalmond;">Accessories</h3>
+                    <div class="card-body">
+                      <h5 class="card-title" style="color: rgba(214, 202, 202, 0.781);">Accessoriesfor all Pets</h5>
+                      <p class="card-image">
+                        <img src="images/acces.jpg" height="175cm" width="280cm">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="carousel-item">
+                  <div class="card w-25 m-auto">
+                <h3><b>Higher Secondary </b></h3><br>
+                <p>Kadri Mills Higher Secondary School</p>
+                <p>HSC/Computer science</p>
+            </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card w-25 m-auto">
+                <h3><b>SSLC </b></h3><br>
+                <p>GHSS</p>
+                <p>SSLC/State Board</p>
+              </div>
+            </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+    </div>
+</body>
+
+</html>

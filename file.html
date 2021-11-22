@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Files attribute</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 700px;
+            padding: 10px;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>FORM</h1>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus><br><br>
+
+        <label for="pin2">ID:</label><br>
+        <input type="text" id="pin2" name="pin2" size="4" maxlength="4" placeholder="ID" required><br><br>
+
+        <label for="phn">Phone:</label><br>
+        <input type="tel" id="pin2" name="pin2" size="10" maxlength="10" placeholder="1234-45-4567" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="pwdd" name="pwdd" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 3}$"><br><br>
+
+        <label name="gender">Gender</label><br>
+        <input type="radio" id="gender" name="gender">
+        <label for="Male">Male</label><br>
+        <input type="radio" id="gender" name="gender">
+        <label for="FeMale">Female</label><br>
+        <input type="radio" id="gender" name="gender">
+        <label for="Non-binary">Non binary</label><br><br>
+
+        <label name="Department"> Department</label><br>
+
+        <label name="ECE">ECE</label>
+        <input type="checkbox" id="ECE"><br>
+
+        <label name="CSE">CSE</label>
+        <input type="checkbox" id="CSE"><br>
+
+        <label name="IT">IT</label>
+        <input type="checkbox" id="IT"><br><br>
+
+        <label for="Color">Pick the color of your ID card:</label>
+        <input type="color" id="favcolor"><br><br>
+
+        <label for="date">Joining date:</label><br>
+        <input type="date" id="date" for="date"><br><br>
+
+        <label for="mail">Enter your mail id:</label><br>
+        <input type="email" id="mail" for="mail"><br><br>
+
+        <label for="record">Number of leaves required:</label><br>
+        <input type="number" id="record" for="record" min="1" max="5"><br><br>
+
+        <label for="birth">Birthdate time and zone:</label>
+        <input type="datetime-local" id="birth" name="birth"><br><br>
+
+        <label for="favnum">Pick your favorite number:</label><br>
+        <input type="range" id="favnum" for="favnum" max="10" min="1" value="9"><br><br>
+
+        <label for="gsearch">Search:</label><br>
+        <input type="search" id="gsearch" value="google" for="gsearch"><br><br>
+
+        <label for="login">Login Time:</label><br>
+        <input type="time" id="login" for="login"><br><br>
+
+        <label for="link">Portfolio:</label><br>
+        <input type="url" id="login" for="login"><br><br>
+
+        <label for="role">Jobrole:</label><br>
+        <input type="text" id="role" for="role" value="GET" readonly><br><br>
+
+        <label for="sal">Salary:</label><br>
+        <input type="number" id="sal" for="sal" disabled><br><br>
+
+        <label for="hobbies">Hobbies:</label><br>
+        <input list="hobbies">
+        <datalist id="hobbies">
+            <option value="Books">
+            <option value="songs">
+            <option value="Games">
+        </datalist><br><br>
+
+        <label for="files">Select files for onboarding:</label><br>
+        <input type="file" id="files" name="files" multiple><br><br>
+
+        <label for="res">Select your resume:</label><br>
+        <input type="file" id="res" name="res"><br><br>
+
+        <input type="text" value="In probation" hidden>
+
+
+        <input type="image" src="image.jpg" name="suubmit" alt="Submit" width="48" height="48"><br><br>
+
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+
+</body>
+
+</html>

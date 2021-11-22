@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Container CSS
+    </title>
+</head>
+<body>
+    <style>
+        .container{
+            display: grid;
+            width:750px;
+            height: 600px;
+            grid-template-columns: 200px 1fr 1fr;
+            grid-template-rows: 80px 1fr 1fr 100px;
+            grid-gap: 2rem;
+        }
+    
+        .header{
+            background: lightcoral;
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+    
+        .sidebar{
+            grid-row: 2/4;
+            background: lightslategray;
+            grid-column: 1/2;
+        }
+    
+        .mcontent{
+            background: ;
+            grid-row: 2/3;
+            grid-column: 3/4;
+        }
+    
+        .leftcontent{
+            background: limegreen;
+            grid-row: 3/4;
+            grid-column: 3/4;
+        }
+    
+        .rightcontent{
+            background: limegreen;
+            grid-row: 3/4;
+            grid-column: 3/4;
+        }
+    
+        .footer{
+            background: lightcoral;
+            grid-row: 4/5;
+            grid-column: 1/4;
+        }
+    </style>
+    <div class="container">
+        <div class="header">Head section</div>
+        <div class="sidebar">side bars</div>
+        <div class="mcontent">Main content</div>
+        <div class="leftcontent">Left section</div>
+        <div class="rightcontent">Right section</div>
+        <div class="footer">Footer section</div>
+    </div>
+</body>
+</html>
+

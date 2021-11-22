@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My JS Function Example</title>
+</head>
+<script type="text/javascript">
+    function displayData(){
+        var name="Arun";
+        //alert("Name is:"+name);
+        //document.write("Name is "+name);
+        return name;
+    }
+</script>
+<script type="text/javascript">
+    function displayDate(){
+        var d=new Date();
+        //alert(d);
+        document.getElementById('a').innerHTML=d;
+    }
+</script>
+<body>
+ <!--a href='images/Arun2.jpg'>Click Me</a-->
+ <script>
+    //displayData();
+    //document.writeln("Name is "+"<input type=text value="+displayData()+" readonly />");
+    //document.writeln("Today date is:<input type=text value="+displayDate()+"readonly />");
+    
+ </script>
+ <a href='#' id='a'>Time will be shown here</a>
+ Enter any key:<input type="text" onkeypress="displayDate()">
+</body>
+</html>

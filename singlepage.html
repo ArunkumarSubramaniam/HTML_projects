@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>My page</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/connect.jpg">
+        <nav>
+            <ul>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#Sign">Sign Up</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <div class="section-inner">
+                <h3>Login to View the contents</h3>
+                <img src="images/login.jpg" width="130" height="60">
+                <form action="register.php" methos="post">
+                    <ul>
+                        <li>Enter UserName:<input type="text" name="uname" required></li>
+                        <li>Enter Password:<input type="password" name="upwd" required></li>
+                        <li><input type="submit" value="Send"><input type="reset" value="Cancel"></li>
+                    </ul>
+                </form>
+            </div>
+        </section>
+        <section id="Sign">
+            <div class="section-inner">
+                <h3>Not registered? SignUp Here!</h3>
+                <form action="register.php" methos="post">
+                    <ul>
+                        <li>Enter FirstName:<input type="text" name="fname" required></li>
+                        <li>Enter Lastname:<input type="text" name="lname" required></li>
+                        <li>Enter MailId:<input type="email" name="mail" required></li>
+                        <li>Enter Password:<input type="password" name="upwd" required></li>
+                        <li><input type="submit" value="Send"><input type="reset" value="Cancel"></li>
+                    </ul>
+                </form>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="section-inner">
+                <h3>Contact us</h3>
+                <p>You can reach us on:</p>
+                <ul>
+                    <li><a href="https://www.Gmail.com">Gmail</a></li>
+                    <li><a href="https://www.Facebook.com">Facebook</a></li>
+                    <li><a href="https://www.twitter.com">Twitter</a></li>
+                    <li><a href="https://www.Instagram.com">Instagram</a></li>
+                </ul>
+                <P>Or, you can also add a comment</P>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2021</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>My page</title>
+</head>
+
+<body bgcolor="sky blue">
+    <header > 
+        <img src="images/elearning.jpg"  title="Let us learn together" height=430 width=100% style="align-items: center;">
+        <nav>
+            <ul>
+                <legend><b>Who is accessing?</b></legend><input type="checkbox" name="ck">I am a Student<input type="checkbox" name="ck">I am a Teacher
+                <br>
+                <br>
+                <b>Navigate here</b>
+                <li><a href="table.html" target="_blank">Login</a></li>
+                <li><a href="#Sign">Sign Up</a></li>
+                <li><a href="https://www.upgrad.com/blog/best-online-computer-courses-for-job/" target="_blank">Courses offered</a></li>
+                <li><a href="#Additional">Additional info</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="https://medium.com/web-development-zone/top-free-ebooks-for-web-designers-web-developers-f8c6a70465ad" target="_blank">For ebooks</a></li>
+                <li><a href="#intro">Online learning</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main><!--
+        <section id="login" style="align-items: center;">
+            <div class="section-inner">
+                <h3>Login to View the contents</h3>
+                <img src="images/login.jpg" width="130" height="60">
+                <form action="register.php" methos="post">
+                    <ul>
+                        <li>Enter UserName:<input type="text" name="uname" required></li>
+                        <li>Enter Password:<input type="password" name="upwd" required></li>
+                        <li><input type="submit" value="Send"><input type="reset" value="Cancel"></li>
+                    </ul>
+                </form>
+            </div>
+        </section> -->
+        
+        <section id="Sign">
+            <div class="section-inner">
+                <h3>Not registered? SignUp Here!</h3>
+                <form action="register.php" methos="post">
+                    <ul>
+                        <li>Enter FirstName:<input type="text" name="fname" required></li>
+                        <li>Enter Lastname: <input type="text" name="lname" required></li>
+                        <li>Enter E-Mail Id:   <input type="email" name="mail" required></li>
+                        <li>Enter Password: <input type="password" name="upwd" required></li>
+                        <input type="submit" value="Send"><input type="reset" value="Cancel">
+                    </ul>
+                </form>
+            </div>
+        </section>
+        <section id="Additional">
+            <div class="section-inner">
+                <h3>Any assistance required?</h3>
+                <fieldset>
+                    <legend>Grievience</legend>
+                    <b>Type Your Queries here:</b><input type="text">
+                    <b>SupportType:</b><input type="checkbox" name="ck">Email<input type="checkbox" name="ck">Call
+                </fieldset>
+                <fieldset>
+                    <legend>Feedback</legend>
+                    <b>Registered User Name:</b><input type="text">
+                    <b>Review:</b><input type="checkbox" name="ck">Super good<input type="checkbox" name="ck">Superbad
+                </fieldset>
+                <!--<input type="submit">-->
+                <!--<p><b><a href="popuptq.html"><img src="images/submit.png" height=30 width=90 alt="submit"></a></b></p>-->
+                <input type="button" onclick="alert('Thank you for your Feedback')" value="Submit">
+
+            </div>
+        </section>
+        <section id="contact">
+            <div class="section-inner">
+                <h3>Contact us</h3>
+                <p>You can reach us on:</p>
+                <ul>
+                    <li><a href="https://www.Gmail.com">Gmail</a></li>
+                    <li><a href="https://www.Facebook.com">Facebook</a></li>
+                    <li><a href="https://www.twitter.com">Twitter</a></li>
+                    <li><a href="https://www.Instagram.com">Instagram</a></li>
+                </ul>
+                <P>Or, you can also add a comment</P>
+            </div>
+        </section>
+        <section id="intro">
+            <div class="section-inner">
+                <h3>Online education</h3>
+                <p>Online learning is education that takes place over the Internet.<br>
+                     It is often referred to as “e- learning” among other terms. <br>
+                     However, online learning is just one type of “distance learning” - the umbrella term for any learning that takes place across distance and not in a traditional classroom.</p>
+                </div>
+                <P>For more info about How online learning works refer this link <a href="http://www.wlac.edu/online/documents/otl.pdf">Click here</a></P>
+        </section>
+    </main>
+    <footer>
+        <p align="center">Copyright 2021 </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML CSS Application Form</title>
+    <link rel="stylesheet" href="css/signupstyle.css">
+  </head>
+  <body>
+    <form class="signup-form" action="" method="">
+      <div class="form-header">
+        <h1>User Survey</h1>
+      </div>
+      <div class="form-body">
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="firstname" class="label-title">First name *</label>
+            <input type="text" id="firstname" class="form-input" placeholder="enter your first name" required="required" />
+          </div>
+          <div class="form-group right">
+            <label for="lastname" class="label-title">Last name</label>
+            <input type="text" id="lastname" class="form-input" placeholder="enter your last name" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="label-title">Email*</label>
+          <input type="email" id="email" class="form-input" placeholder="enter your email" required="required">
+        </div>
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="password" class="label-title">Password *</label>
+            <input type="password" id="password" min="8" max="12" class="form-input" placeholder="enter your password" required="required">
+          </div>
+          <div class="form-group right">
+            <label for="Phone Number" class="label-title">Phone Number *</label>
+            <input type="tel" id="Phone Number" name="Phone Number" class="form-input" palceholder="PhoneNumber" pattern="[7-9]{1}[0-9]{9}" title="Phone number with 7-9 and remaing 9 digit with 0-9"  required="required">
+          </div>
+        </div>
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label class="label-title">Gender:</label>
+            <div class="input-group">
+              <label for="male"><input type="radio" name="gender" value="male" id="male"> Male</label>
+              <label for="female"><input type="radio" name="gender" value="female" id="female"> Female</label>
+            </div>
+          </div>
+          <div class="form-group right">
+            <label for="experience" class="label-title">Age</label>
+            <input type="number" min="18" max="80"  value="18" class="form-input">
+          </div>
+        </div>
+        <div class="horizontal-group">
+          <div class="form-group left" >
+            <label class="label-title">Education Level</label>
+            <select class="form-input" id="level" >
+              <option value="ug">UG</option>
+              <option value="pg">PG</option>
+              <option value="others">Other</option>
+            </select>
+          </div>
+          <div class="form-group right">
+            <label for="experience" class="label-title">Using this Application for the past:</label>
+            <input type="range" min="0" max="8" step="1" value="0" id="experience" class="form-input" onChange="change();" style="height:28px;width:78%;padding:0;">
+            <span id="range-label">8Year</span>
+          </div>
+        </div>
+        <div class="horizontal-group">
+          <div class="form-group left" >
+            <label for="choose-file" class="label-title">Upload the Screenshot for any issues:(upload only images)</label>
+            <input type="file" id="choose-file" size="80">
+          </div>
+          <div class="form-group right">
+            <label class="label-title">You are using this for</label>
+            <div >
+              <label><input type="checkbox" value="Educational">Educational</label>
+              <label><input type="checkbox" value="Entertainment">Entertainment</label>
+              <label><input type="checkbox" value="Timepass">Timepass</label>
+              <label><input type="checkbox" value="Daily updates">Daily updates</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="choose-file" class="label-title">Please provide your Feedback</label>
+          <textarea class="form-input" rows="4" cols="50" style="height:auto"></textarea>
+        </div>
+      </div>
+      <div class="form-footer">
+        <span>* required</span>
+        <button type="submit" class="btn">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

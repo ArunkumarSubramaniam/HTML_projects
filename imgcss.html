@@ -1,0 +1,44 @@
+<style>
+    .box{
+        width: 100px;
+        height: 100px;
+        border: 5px solid red;
+    }
+    img{
+        width:100%;
+        height: 100%;
+    }
+    .container {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: .5rem;
+    }
+   .container > div{
+    background-color: aquamarine;
+    border-radius: .5rem;
+    }
+    .container1{
+        object-fit: contain;
+    } /*contain - gives space*/
+    /*fill - fills with frame*/
+    .container2{
+        object-fit:cover;
+    }/*cover - wont gives any space*/
+    .box2{
+        background-image: url("images/sunset.jpg");
+        width: 50%;
+        height: 100%;
+        border: 3px dotted black;
+    }
+</style>
+
+<div class="container">
+    <div class="box"><img src="images/nature.jpg" alt="nature" class="container1"></div>
+    <div class="box"><img src="images/smiley1.jpg" alt="smiley" class="container2"></div>
+</div>
+
+<div class="container">
+    <div class="box">Hi</div>
+    <div class="box2">Hello</div>
+</div>

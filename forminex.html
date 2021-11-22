@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <title>Dragable Example</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+</head>
+<script>
+    $(function(){
+        $("#uname").blur(function(){
+            let value=$("#uname").val();
+            if(value==''){
+                $("#unameerr").text("Enter username!!!").css("color","red");
+                $("#unameerr").text("Enter username!!!").css("font-weight","bold");
+                $("#uname").focus();
+            }else{
+                    $("#sname").val(value);
+                    $("#unameerr").text("");
+                }
+            
+
+            
+        })
+    });
+    $(function(){
+        $('form').draggable();
+    });
+
+    $(function(){
+        $(".btn").click(function(){
+            
+        })
+        $(h1)
+    })
+</script>
+
+<body>
+    <!-- <div id="mydragdiv" style="width: 200px;height: 100px;padding: 1em;">
+        <span class="move" style="width: 50px;padding: 1em;"></span>
+        <img src="images/nose1.jpeg" height="70%" width="30%">
+        
+    </div> -->
+    <form style="border: 2px solid brown;width: 400px;">
+        <label>Enter Username:</label>
+        <input id="uname" type="text">
+        <label id="unameerr"></label><br>
+        <label>Entered Name is:</label>
+        <input id="sname" type="text">
+    </form>
+    
+</body>
+
+</html>

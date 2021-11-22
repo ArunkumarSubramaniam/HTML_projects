@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<script>
+    function loadData(){
+        var name=document.getElementById('name').value
+        const person={
+            firstName: name,
+            age: document.getElementById('age').value,
+            mobileNumber: document.getElementById('mobile').value,
+            fullName : function(){return "Mr."+this.firstName;}
+        };
+        document.getElementById("data").innerHTML=
+        person.fullName()+ " is " +person.age +"years old.";
+    }
+    function clearData(){
+        document.getElementById("data").innerHTML="";
+    }
+</script>
+<body>
+    <input type="hidden" id="name" value="Arun">
+    <input type="hidden" id="age" value="21">
+    <input type="hidden" id="mobile" value="9876543210">
+    <div ondblclick="loadData()">Show hidden</div>    
+    <p id="data"></p>
+    <div ondblclick="clearData()">clear data</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table with CSS
+    </title>
+</head>
+<style>
+    .table1{
+        float: left;
+        font-weight: bold;
+        text-align: "Center";
+        margin-left: 100px;
+        border: 1px solid;
+        border-collapse: collapse;
+        background-color: chocolate;
+    }
+    .table2{
+        float: right;
+        margin-right:200px;
+        border:2px solid;
+        border-collapse: separate;
+        border-color: darkblue;
+        padding: 10px;
+        border-spacing: 10px;
+    }
+    tr{
+        border: 1px dotted white;
+        border-collapse: collapse;
+        
+    }
+    tr:nth-of-type(even){
+        background-color: yellowgreen;
+    }
+    thead,tfoot{
+        font-style: italic;
+        color: mediumslateblue;
+    }
+</style>
+<body>
+    <table class="table1" border="1">
+        <thead>
+        <tr><th rowspan="2">Name</th><th colspan="2">Vaccination</th>
+        <tr><th>First dose</th><th>second dose</th></tr>
+        <tr><td>Sabari</td><td>02/11/2021</td><td>02/11/2021</td></tr>
+        <tr><td>Kiruba</td><td>02/10/2021</td><td>02/11/2021</td></tr>
+    </thead>  
+    </table>
+    <table class="table2" border="1">
+        <tr><th>Name</th><th>Date</th>
+        <tr><td>Sabari</td><td>02/11/2021</td></tr>
+        <tr><td>Kiruba</td><td>02/10/2021</td></tr>
+    
+        </tr>
+        <tfoot><td colspan="2">two of them completed their dose</td></tfoot>
+    </table>
+    <table id="table2" border=1>
+        <tr><th rowspan="2">S.no</th><th colspan="2">Name</th><th rowspan="2">Age</th></tr>
+        <tr><th>First name</th><th>second Name</th></second></tr>
+        <tr><td>1</td><td>Arun</td><td>kumar</td><td>21</td></tr>
+    </table>
+    <table id="table1" border="1">
+        <tr><th rowspan="2">S.no</th><th rowspan="2">ID</th><th colspan="2">Name</th></tr>
+        <tr><th>First name</th><th>second Name</th></second></tr>
+        <tr><td>1</td><td>abc</td><td>Arunkumar</td><td>S</td></tr>
+    </table>
+</body>
+</html>
+
